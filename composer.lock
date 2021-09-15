@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "80aa6cf4f30e9a6c250f9645915059c4",
+    "content-hash": "2ef8255a2ddbc95bb761724f3bd55583",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -606,6 +606,43 @@
                 "source": "https://github.com/easy-swoole/easyswoole/tree/3.4.6"
             },
             "time": "2021-06-13T04:50:58+00:00"
+        },
+        {
+            "name": "easyswoole/file-watcher",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/file-watcher.git",
+                "reference": "cb23e7332baf9a8e6a1b065269baa4e51aadecfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/file-watcher/zipball/cb23e7332baf9a8e6a1b065269baa4e51aadecfb",
+                "reference": "cb23e7332baf9a8e6a1b065269baa4e51aadecfb",
+                "shasum": ""
+            },
+            "require": {
+                "easyswoole/component": "^2.2",
+                "easyswoole/spl": "^1.3"
+            },
+            "require-dev": {
+                "easyswoole/swoole-ide-helper": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\FileWatcher\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "support": {
+                "issues": "https://github.com/easy-swoole/file-watcher/issues",
+                "source": "https://github.com/easy-swoole/file-watcher/tree/1.0.0"
+            },
+            "time": "2020-12-08T08:30:13+00:00"
         },
         {
             "name": "easyswoole/http",

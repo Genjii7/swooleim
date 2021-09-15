@@ -2,20 +2,22 @@
 
 namespace App\HttpController\Chat\Controller;
 
-use EasySwoole\Http\AbstractInterface\Controller;
+use App\HttpController\Chat\Common\Common;
+use EasySwoole\Http\Request;
 use EasySwoole\HttpAnnotation\AnnotationTag\Api;
 
 /**
  * 用户注册
  */
-class Register extends Controller{
+class Register extends Common{
     /**
      * 注册接口
      * @Api(name="Register-user_register",path="/user/register")
      */
     public function user_register(){
-        $param = $this->request()->getRequestParam('nikename','password');
-        return $this->writeJson(200,$param,'伞兵');
+        $request = $this->request();
+        $data = $request->getRequestParam();
+        $this->returnJson(200,'test',$data);
     }
     
 }
