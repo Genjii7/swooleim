@@ -20,7 +20,7 @@ class Index extends Controller
 
     function test()
     {
-        $this->response()->write('this is test');
+        $this->response()->write('this is test1');
     }
 
     protected function actionNotFound(?string $action)
